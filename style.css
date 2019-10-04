@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: yellow;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: green;
+}
+
+.navbarclass {
+  background: rgb(182, 182, 182);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.mycarouselclass {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100vh;
+}
+
+/* .carousel{
+    max-height: calc(100vh - 81px);
+    overflow: hidden;
+} */
+
+/* Navigation css start  */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-nav li {
+  padding-right: 7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #3e8e41;
+}
+
+/* navigation css ends here */
+
+/* footer css start */
+
+.footer {
+  background-image: url(image/resize-1570185587468654435haroldwijnholdsBb4zdJr4BoEunsplash.jpg);
+  color: #fff;
+  height: 600px;
+  position: relative;
+}
+
+.footer .footer-bottom {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+.footer .footer-content .footet-section{
+
+  font-size: 2rem;
+}
+
+
+/* footer css end */
