@@ -1,0 +1,16 @@
+.jumbotron{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: brown;
+}
+.card-body .btn{
+    font-size:1.4rem;
+    text-transform: capitalize;
+}
+
+.card .card-body .card-title{
+    font-weight: 700;
+    font-size:1.2rem;
+    color: tomato; 
+}

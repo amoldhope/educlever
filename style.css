@@ -5,86 +5,41 @@ body {
   color: #505962;
 }
 
-.dropbtn {
-  padding: 16px;
-  font-size: 16px;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+/* jumbotron css start here */
+  .jumbotron .heading{
+    color: black;
+  }
+/* jumbotron css end here */
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: yellow;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: green;
-}
-
-.navbarclass {
-  background: rgb(182, 182, 182);
-}
-
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.button:hover {
-  background-color: #3e8e41
-}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.mycarouselclass {
-  width: 100%;
-  height: 100%;
-}
+/* carousel css start here  */
 
 .carousel-inner img {
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
 
-/* .carousel{
-    max-height: calc(100vh - 81px);
-    overflow: hidden;
-} */
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+}
+
+.carousel-caption h1 {
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+/* carousel css end here  */
 
 /* Navigation css start  */
+
+.logo {
+  margin-left: 3rem;
+  margin-top: 15px;
+}
 
 .navbar {
   text-transform: uppercase;
@@ -95,12 +50,12 @@ body {
 }
 
 .navbar-nav li {
-  padding-right: 7rem;
+  padding-right: 4rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
@@ -111,23 +66,251 @@ body {
 
 /* footer css start */
 
-.footer {
-  background-image: url(image/resize-1570185587468654435haroldwijnholdsBb4zdJr4BoEunsplash.jpg);
-  color: #fff;
-  height: 600px;
+footer {
+  /* background-image: url(image/resize-1570185587468654435haroldwijnholdsBb4zdJr4BoEunsplash.jpg); */
+  color: white;
+  background-color: black;
+  position: relative;
+  font-size: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0.2rem;
+}
+
+.footer-menu ul li a:hover {
+  color: green;
+}
+
+a {
+  color: #5867dd
+}
+
+a:focus {
+  outline: 0
+}
+
+.footer-widget-title {
+  line-height: 42px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-widget .input-group .btn {
+  background: green;
+}
+
+/* footer css end */
+
+.enroll {
+  /* background-image: url("https://thumbs.dreamstime.com/z/transparent-drop-shadow-reflection-vector-illustration-35982858.jpg"); */
+  background-color: #505962;
+}
+
+/* progress bar css start here */
+
+.progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
   position: relative;
 }
 
-.footer .footer-bottom {
+.progress:after {
+  content: "";
   width: 100%;
-  height: 100px;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
   position: absolute;
-  bottom: 0px;
-}
-.footer .footer-content .footet-section{
-
-  font-size: 2rem;
+  top: 0;
+  left: 0;
 }
 
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
 
-/* footer css end */
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #44484b;
+  font-size: 24px;
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.progress.blue .progress-bar {
+  border-color: #049dff;
+}
+
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-bar {
+  border-color: #fdba04;
+}
+
+.progress.yellow .progress-left .progress-bar {
+  animation: loading-3 1s linear forwards 1.8s;
+}
+
+.progress.pink .progress-bar {
+  border-color: #ed687c;
+}
+
+.progress.red .progress-bar {
+  border-color: red;
+}
+
+.progress.pink .progress-left .progress-bar {
+  animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.progress.green .progress-bar {
+  border-color: #1abc9c;
+}
+
+.progress.green .progress-left .progress-bar {
+  animation: loading-5 1.2s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+}
+
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .progress {
+    margin-bottom: 20px;
+  }
+}
+
+/* progress bar css end here */
+
+/* card css start here */
+
+.card .card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.card .card-body .card-text {
+  font-size: 1.2rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+}
+
+/* card css end here */
