@@ -7,51 +7,52 @@
     <link rel="stylesheet" href="css/blogStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 
 <body>
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-lg-5 col-sm-6 text-center ">
-                <img src="http://themelamp.com/html/learnedu/images/logo.png" alt="logo">
-            </div>
-            <div class="col-lg-7 col-sm-6">
-                <div class="row mx-auto">
-                    <div class="col-md-4 col-sm-12">
-                        <h6 class="text-capitalize  "> <i class="fa fa-phone mr-3" style="font-size:36px"></i>call now
-                        </h6>
-                        <h6>(+121) 1800 567 980</h6>
+    <!-- header top start here -->
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="http://themelamp.com/html/learnedu/images/logo.png" alt="logo">
+                        </a>
 
                     </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-12">
+                    <div class="header-widget">
+                        <div class="single-widget">
+                            <i class="fa fa-phone"></i>
+                            <h4>Call now</h4>
+                            <span>9848547859345</span>
+                        </div>
+                        <div class="single-widget">
+                            <i class="fa fa-envelope"></i>
+                            <h4>Send Message</h4>
+                            <span>support@mail.com</span>
+                        </div>
+                        <div class="single-widget">
+                            <i class="fa fa-map-marker"></i>
+                            <h4>Location</h4>
+                            <span>pune india</span>
+                        </div>
 
-                    <div class="col-md-4 col-sm-12">
-                        <h6 class="text-capitalize"><i class="fa fa-envelope" style="font-size:24px"></i>
-                            Send Message</h6>
-                        <h6>Support @education.com</h6>
                     </div>
-                    <div class="col-md-4 col-sm-12 ">
-                        <h6 class="text-capitalize"><i class="fa fa-map-marker" style="font-size:24px"></i>
-                            our location</h6>
-                        <h6>pune india</h6>
-
-                    </div>
-
                 </div>
             </div>
+
         </div>
     </div>
+    <!-- header top end here -->
+
 
     <!-- navbar starts here -->
-
     <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cources</a>
+                    <a class="nav-link" href="courses.html">Cources</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blogs.html">Blogs</a>
@@ -83,6 +84,29 @@
     </nav>
     <!-- navbar end here -->
 
+    <!-- breadcrumb start here -->
+    <section class="breadcrumbs ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Blog & News Page</h2>
+                    <ul class="bread-list">
+                        <li>
+                            <a href="index.html">Home <i class="fa fa-angle-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"> Blog Grid</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- breadcrumb end here -->
+
+
     <!-- blogs card start here -->
     <div class="container">
         <div class="row">
@@ -98,100 +122,118 @@
                         <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
                             dignissim</p>
                         <div>
-                            <button class="btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                            <button class="btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right"
+                                    aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
-                            alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Our Student Have sit amet egestas</h4>
-                            <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
-                            <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
-                            <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
-                            <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
-                                dignissim</p>
-                            <div>
-                                <button class=" btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                            </div>
+                <div class="card">
+                    <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Our Student Have sit amet egestas</h4>
+                        <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
+                        <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
+                        <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
+                        <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
+                            dignissim</p>
+                        <div>
+                            <button class=" btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right"
+                                    aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
-                                alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Our Student Have sit amet egestas</h4>
-                                <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
-                                <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
-                                <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
-                                <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
-                                    dignissim</p>
-                                <div>
-                                    <button class=" btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Our Student Have sit amet egestas</h4>
+                        <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
+                        <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
+                        <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
+                        <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
+                            dignissim</p>
+                        <div>
+                            <button class=" btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right"
+                                    aria-hidden="true"></i></button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                            <div class="card">
-                                <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
-                                    alt="Card image">
-                                <div class="card-body">
-                                    <h4 class="card-title">Our Student Have sit amet egestas</h4>
-                                    <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
-                                    <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
-                                    <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
-                                    <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
-                                        dignissim</p>
-                                    <div>
-                                        <button class="btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Our Student Have sit amet egestas</h4>
+                        <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
+                        <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
+                        <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
+                        <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
+                            dignissim</p>
+                        <div>
+                            <button class="btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right"
+                                    aria-hidden="true"></i></button>
                         </div>
-                        <div class="col-md-4">
-                                <div class="card">
-                                    <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
-                                        alt="Card image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Our Student Have sit amet egestas</h4>
-                                        <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
-                                        <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
-                                        <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
-                                        <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
-                                            dignissim</p>
-                                        <div>
-                                            <button class="btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                    <div class="card">
-                                        <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
-                                            alt="Card image">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Our Student Have sit amet egestas</h4>
-                                            <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
-                                            <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
-                                            <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
-                                            <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
-                                                dignissim</p>
-                                            <div>
-                                                <button class=" btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Our Student Have sit amet egestas</h4>
+                        <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
+                        <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
+                        <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
+                        <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
+                            dignissim</p>
+                        <div>
+                            <button class="btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top image-fluid" src="image/card/helloquence-5fNmWej4tAA-unsplash.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Our Student Have sit amet egestas</h4>
+                        <i class="fa fa-user text-success mr-1" aria-hidden="true"></i>By:admin
+                        <i class="fa fa-tasks text-success ml-1 mr-1" aria-hidden="true"></i> Learning
+                        <i class="fa fa-thumbs-up ml-1 text-success" aria-hidden="true"></i>53k
+                        <p class="card-text">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat
+                            dignissim</p>
+                        <div>
+                            <button class=" btn bg-success p-2 text-light">Read More <i class="fa fa-chevron-right"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- blogs card end here -->
 
+
+    <!-- pagination start here -->
+    <div class="container mt-3 mb-2 pl-5">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </div>
+    <!-- pagination end here -->
 
     <!-- footer start here -->
 
@@ -315,6 +357,12 @@
         </div>
     </footer>
     <!-- footer end here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -3,3 +3,92 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+
+/* breadscrumb start here  */
+.breadcrumbs .list{
+    display: inline-block;
+    margin-top:15px;
+
+}
+.breadcrumbs ul li a{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    background: transparent;
+    background:green;
+
+}
+.breadcrumbs{
+    background-image: url("../breadscrumb1.jpg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: relative;
+    padding: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.breadcrumbs h2{
+    color:#fff;
+    font-size: 45px;
+    font-weight: 700;
+    /* letter-spacing: 0.3rem; */
+}
+/* breadscrumb end here  */
+
+.section-title h2{
+font-size: 40px;
+text-transform: capitalize;
+font-weight: 700;
+}
+
+/* header top css starts here */
+.header-inner .logo{
+
+    float: left;
+    margin-top: 34px;
+}
+.header-widget{
+    float: right;  
+    padding:30px; 
+}
+
+.single-widget{
+position: relative;
+display: inline-block;
+padding-left: 60px;
+margin-right: 40px;
+}
+
+.row{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.fa{
+    display: inline-block;
+}
+.single-widget i{
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    border: 10px solid white;
+    border-radius: 100%;
+    line-height: 40px;
+    color: green;
+}
+
+/* Header top css ends here */
+
+/* course card css start here */
+
+.courses:hover{
+transform:scale3d(1.1,1.1,1.1);
+background-color:aquamarine;
+}
+/* course card css end here */

@@ -5,39 +5,113 @@ body {
   color: #505962;
 }
 
+/* header top css starts here */
+
+.header-inner .logo {
+  float: left;
+  margin-top: 34px;
+}
+
+.header-widget {
+  float: right;
+  padding: 30px;
+}
+
+.single-widget {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  margin-right: 10px;
+}
+
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.fa {
+  display: inline-block;
+}
+
+.single-widget i {
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 40px;
+  border: 10px solid white;
+  border-radius: 100%;
+  line-height: 40px;
+  color: green;
+}
+
+/* Header top css ends here */
 
 /* jumbotron css start here */
-  .jumbotron .heading{
-    color: black;
-  }
+
+.jumbotron {
+  background: none;
+}
+
+.jumbotron .heading {
+  color: black;
+  font-size: 3rem;
+}
+
+.jumbotron p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 /* jumbotron css end here */
 
 /* carousel css start here  */
 
 .carousel-inner img {
-  height: 100vh;
+  max-height: 800px;
   width: 100%;
+  object-fit: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size:auto;
 }
 
 .carousel-caption {
   position: absolute;
-  top: 38%;
+  top:38%;
 }
 
 .carousel-caption h1 {
   color: white;
-  font-size: 3.8rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
 
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 480px) {
+  .carousel-caption {
+    position: absolute;
+    top:10px;
+  } 
+  .carousel-caption h1 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
 /* carousel css end here  */
 
 /* Navigation css start  */
 
 .logo {
-  margin-left: 3rem;
+  text-align: center;
   margin-top: 15px;
 }
 
@@ -107,11 +181,59 @@ a:focus {
   background: green;
 }
 
+footer .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
 /* footer css end */
 
 .enroll {
   /* background-image: url("https://thumbs.dreamstime.com/z/transparent-drop-shadow-reflection-vector-illustration-35982858.jpg"); */
   background-color: #505962;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  padding: 40px;
+}
+
+.enroll .enroll-form {
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.enroll .enroll-form .form-head {
+  background: #3e8e41;
+}
+
+.enroll .enroll-form form {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.enroll .enroll-form form {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.enroll .button .btn {
+  width: 100%;
+  background-color: black;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  color: #fff;
+}
+
+.enroll .enroll-form .form-head h1 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.enroll .enroll-form .form-head h6 {
+  color: white;
+  text-align: center;
 }
 
 /* progress bar css start here */
@@ -310,7 +432,41 @@ a:focus {
 
 .card-img-top {
   width: 100%;
-  height: 15vw;
+  height: 15rem;
+  object-fit: cover;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:white;
+}
+
+
+.overlay-btn {
+  color: white;
+  background-color: green;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 700;
+}
+
+.single-future:hover .overlay{
+  opacity: 0.8;
+
+}
 /* card css end here */

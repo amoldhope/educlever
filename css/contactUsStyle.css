@@ -1,0 +1,47 @@
+.jumbotron h1{
+
+        font-weight: 700;
+        font-size: 48px;
+}
+
+/* header top css starts here */
+.header-inner .logo{
+
+        float: left;
+        margin-top: 34px;
+    }
+    .header-widget{
+        float: right;  
+        padding:30px; 
+    }
+    
+    .single-widget{
+    position: relative;
+    display: inline-block;
+    padding-left: 60px;
+    margin-right: 40px;
+    }
+    
+    .row{
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .fa{
+        display: inline-block;
+    }
+    .single-widget i{
+        position: absolute;
+        text-align: center;
+        font-size: 22px;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 40px;
+        border: 10px solid white;
+        border-radius: 100%;
+        line-height: 40px;
+        color: green;
+    }
+    
+    /* Header top css ends here */
